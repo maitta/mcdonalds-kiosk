@@ -4,10 +4,12 @@
       <app-product
         *ngFor="let product of products"
         [product]="product"
+        (click)="toggleActive(product)"
+        [ngClass]="{selected: product.active}"
         class="product"
       ></app-product>
   </section>
-  <section class="summary">
+  <section class="summary" *ngIf="isShowTotal()">
     <strong>Order Details</strong>
    </section>
 </main>

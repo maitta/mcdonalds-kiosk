@@ -88,13 +88,13 @@ export class MachineService {
       item.active = !item.active;
   }
 
-  getTotal(){
+  getTotal(): number{
       var total = 0;
       this.products.forEach(function(item: any){
           if (item.active){
               total+= item.price * item.quantity;
           }
       });
-      return total.toFixed(2);
+      return parseFloat(total.toFixed(2));
     }
 }

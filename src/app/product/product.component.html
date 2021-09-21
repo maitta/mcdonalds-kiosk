@@ -4,7 +4,5 @@
 <div class="description">
     <span class="name">{{product.name}}</span>
     <span class="price">$ {{product.price}}</span>
-    <div class="quantity-area">
-        
-    </div>
+    <app-quantity [product]="product" *ngIf="product.active"></app-quantity>
 </div>

@@ -1,0 +1,5 @@
+<div class="quantity-area">    
+    <button [disabled]="isDisabled()" (click)="removeUnit($event)">-</button> 
+        <span class="quantity">{{product.quantity}}</span> 
+    <button (click)="addUnit($event)">+</button>
+</div>
