@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td *ngIf="product.active">{{product.quantity + 'x ' + product.name}}</td>
+            <td *ngIf="product.active">{{(product.quantity * product.price).toFixed(2)}}</td>
+        </tr>
+        
+        <tr>
+            <th>Total</th>
+            <th>{{getTotal()}}</th>
+        </tr>
+    </tbody>
+</table>

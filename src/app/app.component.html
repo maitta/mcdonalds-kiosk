@@ -1,15 +1,16 @@
 <main id="app">            
   <section class="items">
-      <h4>Pick your items</h4>
-      <app-product
-        *ngFor="let product of products"
-        [product]="product"
-        (click)="toggleActive(product)"
-        [ngClass]="{selected: product.active}"
-        class="product"
-      ></app-product>
+    <h4>Pick your items</h4>
+    <app-product
+      *ngFor="let product of products"
+      [product]="product"
+      (click)="toggleActive(product)"
+      [ngClass]="{selected: product.active}"
+      class="product"
+    ></app-product>
   </section>
   <section class="summary" *ngIf="isShowTotal()">
     <strong>Order Details</strong>
-   </section>
+    <app-order-details></app-order-details>
+  </section>
 </main>
