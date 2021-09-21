@@ -2,63 +2,63 @@ import { Injectable } from '@angular/core';
 
 const products = [
   {
-      "photo": "img/big-mac.png",
+      "photo": "assets/img/big-mac.png",
       "name": "Big Mac",
       "price": 5.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/mc-chicken.png",
+      "photo": "assets/img/mc-chicken.png",
       "name": "Mc Chicken",
       "price": 4.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/double-cb.png",
+      "photo": "assets/img/double-cb.png",
       "name": "Double Cheese Burger",
       "price": 2.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/fries.png",
+      "photo": "assets/img/fries.png",
       "name": "Fries",
       "price": 2.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/nuggets.png",
+      "photo": "assets/img/nuggets.png",
       "name": "Mc Nuggets",
       "price": 3.49,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/salad.png",
+      "photo": "assets/img/salad.png",
       "name": "Salad",
       "price": 2.79,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/cola.png",
+      "photo": "assets/img/cola.png",
       "name": "Coke",
       "price": 1.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/lipton.png",
+      "photo": "assets/img/lipton.png",
       "name": "Ice Tea",
       "price": 1.99,
       "active": false,
       "quantity": 1
   },
   {
-      "photo": "img/water.png",
+      "photo": "assets/img/water.png",
       "name": "Water",
       "price": 1.49,
       "active": false,
@@ -77,7 +77,7 @@ export class MachineService {
     this.products = products;
   }
 
-  getData() {
+  public getData() {
       return {
           products: products,
           orderTotal: 0

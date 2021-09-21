@@ -1,6 +1,11 @@
 <main id="app">            
   <section class="items">
       <h4>Pick your items</h4>
+      <app-product
+        *ngFor="let product of products"
+        [product]="product"
+        class="product"
+      ></app-product>
   </section>
   <section class="summary">
     <strong>Order Details</strong>
