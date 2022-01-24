@@ -11,19 +11,18 @@ import { MachineService } from './machine.service'
 export class AppComponent {
   title = 'McDonald\'s Kiosk'
   products: any
-  machineService: MachineService
 
-  constructor(private titleService: Title, private machine: MachineService){
+  constructor(private titleService: Title, private machineService: MachineService){
     this.titleService.setTitle(this.title)
-    this.products = machine.getData().products
-    this.machineService = machine
+    // TODO refactoring this.products out of the constructor would allow for better testing
+    this.products = machineService.getData().products
   }
 
   toggleActive(product: any){
-    this.machine.toggleActive(product)
+    this.machineService.toggleActive(product)
   }
 
-  isShowTotal(){
+  isShowTotal(): boolean{
     return this.machineService.getTotal() > 0
   }
 }
