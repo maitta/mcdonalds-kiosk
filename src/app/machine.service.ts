@@ -71,7 +71,7 @@ const products = [
 })
 export class MachineService {
 
-  products: any
+  private products: any
 
   constructor() { 
     this.products = products

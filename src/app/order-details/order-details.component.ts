@@ -9,7 +9,6 @@ import { MachineService } from '../machine.service'
 export class OrderDetailsComponent implements OnInit {
 
   products: any
-  test: any = [1, 2, 3, 4,5]
 
   constructor(private machine: MachineService) {
     this.products = machine.getData().products
