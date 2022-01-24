@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 
-import { MachineService } from './machine.service';
+import { MachineService } from './machine.service'
 
 describe('MachineService', () => {
-  let service: MachineService;
+  let service: MachineService
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(MachineService);
-  });
+    TestBed.configureTestingModule({})
+    service = TestBed.inject(MachineService)
+  })
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+    expect(service).toBeTruthy()
+  })
+})

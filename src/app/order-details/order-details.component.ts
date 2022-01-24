@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { MachineService } from '../machine.service';
+import { Component, Input, OnInit } from '@angular/core'
+import { MachineService } from '../machine.service'
 
 @Component({
   selector: 'app-order-details',
@@ -8,20 +8,18 @@ import { MachineService } from '../machine.service';
 })
 export class OrderDetailsComponent implements OnInit {
 
-  products: any;
-  test: any = [1, 2, 3, 4,5];
-  machineService: MachineService;
+  products: any
+  test: any = [1, 2, 3, 4,5]
 
-  constructor(private machine: MachineService) { 
-    this.machineService = machine;
-    this.products = machine.getData().products;
+  constructor(private machine: MachineService) {
+    this.products = machine.getData().products
   }
 
   ngOnInit(): void {
   }
 
   getTotal(): number{
-    return this.machineService.getTotal();
+    return this.machine.getTotal()
   }
 
 }

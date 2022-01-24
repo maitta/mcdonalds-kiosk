@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
 const products = [
   {
@@ -64,17 +64,17 @@ const products = [
       "active": false,
       "quantity": 1
   }
-];
+]
 
 @Injectable({
   providedIn: 'root'
 })
 export class MachineService {
 
-  products: any;
+  products: any
 
   constructor() { 
-    this.products = products;
+    this.products = products
   }
 
   public getData() {
@@ -85,16 +85,16 @@ export class MachineService {
   }
 
   toggleActive(item: any){
-      item.active = !item.active;
+      item.active = !item.active
   }
 
   getTotal(): number{
-      var total = 0;
+      var total = 0
       this.products.forEach(function(item: any){
           if (item.active){
-              total+= item.price * item.quantity;
+              total+= item.price * item.quantity
           }
-      });
-      return parseFloat(total.toFixed(2));
+      })
+      return parseFloat(total.toFixed(2))
     }
 }

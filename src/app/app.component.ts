@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 
-import { MachineService } from './machine.service';
+import { MachineService } from './machine.service'
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,14 @@ import { MachineService } from './machine.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'McDonald\'s Kiosk';
-  products: any;
-  machineService: MachineService;
+  title = 'McDonald\'s Kiosk'
+  products: any
+  machineService: MachineService
 
   constructor(private titleService: Title, private machine: MachineService){
-    this.titleService.setTitle(this.title);
-    this.products = machine.getData().products;
-    this.machineService = machine;
+    this.titleService.setTitle(this.title)
+    this.products = machine.getData().products
+    this.machineService = machine
   }
 
   toggleActive(product: any){
@@ -24,6 +24,6 @@ export class AppComponent {
   }
 
   isShowTotal(){
-    return this.machineService.getTotal() > 0;
+    return this.machineService.getTotal() > 0
   }
 }
