@@ -1,6 +1,6 @@
-# McDonaldKiosk
+# McDonald Kiosk
 
-Angular port of vue application from Ivan Lourenço Gomes @Udemy which simply simulates the self-service kiosk machines at the McDonald's fast food restaurants. It also adds 25+ tests with a code coverage of 100%.
+Angular port of Vue application from Ivan Lourenço Gomes @Udemy which simply simulates the self-service kiosk machines at the McDonald's fast food restaurants. It also adds 25+ tests with a code coverage of 100%.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
